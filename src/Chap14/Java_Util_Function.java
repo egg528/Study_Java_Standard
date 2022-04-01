@@ -1,6 +1,7 @@
 package Chap14;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Objects;
 import java.util.function.*;
 import java.lang.*;
@@ -52,6 +53,8 @@ public class Java_Util_Function {
        // 기본형을 사용하는 함수형 인터페이스
         DoubleToIntFunction doubleToInt = (a) -> (int) a;
         IntSupplier s = () -> (int) Math.random()*100;
+
+
 
 
     }
