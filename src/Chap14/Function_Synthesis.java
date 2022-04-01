@@ -16,8 +16,8 @@ public class Function_Synthesis {
         Predicate<Integer> isUnder100 = i -> i < 100;
         System.out.println(isUnder100.test(99));
 
-        Predicate<String> temp = Predicate.isEqual("TYPE1");
-        System.out.println(temp.test(new String("TYPE1")));
+        Predicate<String> temp = Predicate.isEqual("CHECK");
+        System.out.println(temp.test(new String("CHECK")));
 
 
 
