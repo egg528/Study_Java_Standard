@@ -1,10 +1,9 @@
 package Chap14;
 
-import java.util.Collections;
 import java.util.function.*;
 
 
-public class Function_Synthesis {
+public class FunctionSynthesis {
 
     public static void main(String[] args) {
         Function<String, Integer> function1 = (a) -> a.length();

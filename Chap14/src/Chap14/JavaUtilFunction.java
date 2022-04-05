@@ -1,12 +1,10 @@
 package Chap14;
 
 import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Objects;
 import java.util.function.*;
 import java.lang.*;
 
-public class Java_Util_Function {
+public class JavaUtilFunction {
     public static void main(String[] args) {
 
         Runnable runnable = () -> System.out.println("run");

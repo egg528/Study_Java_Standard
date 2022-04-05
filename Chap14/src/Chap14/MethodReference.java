@@ -3,7 +3,7 @@ package Chap14;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
-public class Method_Reference {
+public class MethodReference {
     public static void main(String[] args) {
 
         // method reference는 람다식을 조금 더 간략하게 표현하는 방법

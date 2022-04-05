@@ -3,7 +3,7 @@ package Chap14;
 
 import java.util.*;
 
-public class Functional_Interface {
+public class FunctionalInterface {
     public static void main(String[] args) {
 
         // 익명 객체로 인터페이스 구현하기
@@ -50,12 +50,12 @@ public class Functional_Interface {
         System.out.println(myFunction.max(1, 2));
     }
 
-    @FunctionalInterface
+    @java.lang.FunctionalInterface
     interface MyFunction2{
         public abstract void method();
     }
 
-    @FunctionalInterface
+    @java.lang.FunctionalInterface
     interface MyFunction{
         public abstract  int max(int a, int b);
     }
