@@ -2,5 +2,5 @@
 
 자바의 정석 중 필요한 부분 학습
 
-# [람다와 스트림](.Chap14/README.md)
+# [Chap14 - 람다와 스트림](Chap14/README.md)
 
