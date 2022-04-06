@@ -1,5 +1,6 @@
 package Chap14;
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.function.Predicate;
 import java.util.stream.IntStream;
@@ -33,5 +34,20 @@ public class StreamMiddleOperation {
 
         Stream<Integer> intStream = Stream.of(5, 4, 3, 2, 1);
         intStream.sorted((o1, o2) -> Integer.compare(o1, o2)).forEach(System.out::print); // 12345
+
+        // map() - 원하는 필드를 뽑거나 특정 형태로 변환해야할 때
+
+        // peek() - 요소들을 소모하지 않으면서 출력해볼 수 있기에 연산 중간 과정을 확인할 수 있다.
+
+        // mapToInt, Double, Long - Stream<T> 타입의 스트림을 기본형 스트림으로 변환할 때 사용
+        // 기본형 스트림의 장점 중 하나는 특정 최종 연산을 제공한다는 점. ex - max, average max, min
+
+        // flatMap - Stream<T[]> => Stream<T>
+        Stream.of(new String[]{"I am a bird.", "I can fly"}).
+                flatMap(line -> Stream.of(line.split(" ")))
+                .forEach(System.out::println);
+
+
+
     }
 }
